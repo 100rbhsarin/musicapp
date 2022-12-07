@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap'); 
+
+
+body{
+    background-color: rgb(104,189,233) ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    /* width: auto; */
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 70px;
+    background-color: white;
+
+}
+nav ul li{
+    padding: 0 18px;
+    background-attachment: fixed;
+
+}
+.searchbar{
+    border-radius: 25px;
+    padding: 4px;
+    margin-left: 320px;
+    border: solid rgb(104,189,233);
+}
+.logo img{
+    width: 167px;
+    height: 75  px;
+    padding: 0 12px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    
+}
+.contaner{
+    min-height: vw;
+    background-color: rgb(255,254,68);;
+    color: black;
+font-family: 'Courier New', Courier, monospace;
+border: solid black ;
+display: flex;
+flex-direction: column ;
+margin: 23px auto;
+width: 70%;
+border-radius: 12px;
+padding: 34px;
+/* background-image: url(./photo2.jpg); */  
+
+
+}
+.songItem{
+    
+    display: flex;
+    /* flex: wrap; */
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+border: solid black;
+    background:rgba(255,255,255, 0.3);
+    border-radius: 14px;
+    margin-top: 12px;
+    /* padding-left: 12px;
+    padding-bottom: 19px; */
+
+}
+
+  
+.songcontaner{
+    padding-top: 20px;
+    width: 340px;
+    
+}
+
+.songItem{
+   background-color: rgb(104,189,233);
+}
+
+.songItem i {
+    /* border: solid black ; */
+    /* border-radius: 32px; */
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.contaner h1{
+    background-color: rgb(255,254,68);
+    border: solid black ;
+    /* float: left; */
+    border-radius: 13px;
+    display: flex;
+    align-content: flex-start;
+      width: 340px;
+    
+}
+.bottom{
+    position: sticky ;
+    height: 80px;
+    background-color: rgb(169, 146, 21) ;
+    color: white;
+    bottom: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.icons{
+     margin-top: 19px;  
+       
+}
+.icons i{
+    cursor: pointer;
+    padding-left: 5px;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    bottom: 18px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#myprogressBar{
+    width: 80vw;
+    cursor: pointer;
+}
