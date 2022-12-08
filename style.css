@@ -1,18 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap'); 
 
-
-body{
-    background-color: rgb(104,189,233) ;
+html{
+    transition: all 0.5s ease-in;
 }
+ body{
+    background-color: rgb(104,189,233) ;
+} 
+:root{
+    --primary-color:#000;
+    --secondary-color:  #fff;
 
+}
+body.dark {
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+body.dark{
+    background-color: #111;
+    color: var(--primary-color); */
+ }
 *{
     margin: 0;
     padding: 0;
 }
+.contaner.dark{
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+.contaner.dark{
+    background-color: #111;
+    color: var(--primary-color);
+}
+.toggle{
+    cursor: pointer;
+background-color: var(--primary-color);
+color: var(--secondary-color);
+border: 0;
+border-radius: 4px;
+padding: 8px 12px;
+position: absolute;
+top: 100px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.toggle:focus{
+    outline: none;
+} 
 nav{
     font-family: 'Courier New', Courier, monospace;
     /* width: auto; */
+
 }
 nav ul{
     display: flex;
@@ -22,35 +60,46 @@ nav ul{
     background-color: white;
 
 }
+
 nav ul li{
     padding: 0 18px;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 
+}
+nav ul.dark{
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+nav ul.dark{
+    background-color: #111;
+    color: var(--primary-color);
 }
 .searchbar{
     border-radius: 25px;
     padding: 4px;
-    margin-left: 320px;
+    /* margin-left: 320px; */
     border: solid rgb(104,189,233);
 }
-.logo img{
-    width: 167px;
-    height: 75  px;
-    padding: 0 12px;
+.logoimg{
+    width: 60px;
+    /* height: 75px; */
+    /* padding: 0 12px; */
 }
 .logo{
     display: flex;
     align-items: center;
     font-weight: bolder;
     font-size: 1.3rem;
+    }
     
-}
+
+    
 .contaner{
     min-height: vw;
-    background-color: rgb(255,254,68);;
-    color: black;
+    background-color:  gold;;
+    color: white;
 font-family: 'Courier New', Courier, monospace;
-border: solid black ;
+border: solid rgb(104,189,233) ;
 display: flex;
 flex-direction: column ;
 margin: 23px auto;
@@ -68,12 +117,14 @@ padding: 34px;
 flex-direction: row;
 align-items: center;
 justify-content: space-evenly;
-border: solid black;
-    background:rgba(255,255,255, 0.3);
+border: solid rgb(104,189,233);
+    /* background:rgba(255,255,255, 0.3); */
     border-radius: 14px;
     margin-top: 12px;
     /* padding-left: 12px;
     padding-bottom: 19px; */
+    background-color: black;
+width: 60%;
 
 }
 
@@ -84,9 +135,7 @@ border: solid black;
     
 }
 
-.songItem{
-   background-color: rgb(104,189,233);
-}
+
 
 .songItem i {
     /* border: solid black ; */
@@ -97,13 +146,14 @@ border: solid black;
 }
 
 .contaner h1{
-    background-color: rgb(255,254,68);
-    border: solid black ;
+    background-color: ;
+    border: solid rgb(104,189,233) ;
     /* float: left; */
     border-radius: 13px;
     display: flex;
     align-content: flex-start;
-      width: 340px;
+      width: 25%;
+      padding: 4px;
     
 }
 .bottom{
@@ -118,6 +168,15 @@ border: solid black;
     flex-direction: column;
 
 }
+.bottom.dark{
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+.bottom.dark{
+    background-color: #111;
+    color: var(--primary-color);
+}
+
 .icons{
      margin-top: 19px;  
        
